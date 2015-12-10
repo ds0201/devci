@@ -1,4 +1,8 @@
-index.html
-Fichier source
+<?php
+$a = 123;
+$b = 9;
+$c = $a + $b;
 
-mod 15:35
+echo "Le résultat est ".$c;
+
+?>
