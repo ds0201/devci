@@ -20,7 +20,7 @@ class Money
 
     public function setAmount($amount)
     {
-        $this->_amount = $amount;
+        $this->_amount = $amount+1;
     }
     public function addition($a,$b)
     {
