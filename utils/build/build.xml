@@ -6,7 +6,7 @@
         description="Tâche principale d'intégration continue"
         depends="clean,qa"
     >
-    	<exec logoutput="true"  command="echo 'ok' > /var/www/html/index.html" escape="false" />
+    	
 	</target>
 
     <target name="clean" description="Vide les répertoires d'artefacts">
