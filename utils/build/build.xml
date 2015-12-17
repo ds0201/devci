@@ -22,8 +22,18 @@
     </target>
 
     <target name="qa" description="Lance les outils d'analyse">
-    	<phingcall target="phpmd" />
+    	<phingcall target="phpcs" />
 	 </target>
+
+
+	<target name="phpcs">
+	    <phpcodesniffer standard="Zend">
+	        <fileset dir="${project.basedir}/${source}">
+	            <include name="**/*.php"/>
+	        </fileset>
+	        <formatter type="checkstyle" outfile="${project.basedir}/build/logs/checkstyle.xml"/>
+	    </phpcodesniffer>
+	</target>	 
    <target name="phpmd">
 	    <phpmd file="${project.basedir}/${source}">
 	        <formatter type="xml" outfile="${project.basedir}/build/phpmd.xml" />
