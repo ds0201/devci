@@ -28,7 +28,7 @@
 
 	 <target name="phpunit">
 	    
-	    <exec logoutput="true" dir="${project.basedir}/tests" command="phpunit -c phpunit.xml" escape="false" />
+	    <exec logoutput="true" dir="${project.basedir}/tests" command="phpunit -c phpunit.xml --log-junit ${project.basedir}/build/logs/junit.xml" escape="false" />
 	</target>
 	<target name="phpcs">
 	    <phpcodesniffer standard="Zend">
