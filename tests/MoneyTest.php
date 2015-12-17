@@ -47,7 +47,7 @@ class MoneyTest extends PHPUnit_Framework_TestCase
         $b = $a->substraction(2,1);
 
         // Assert
-        $this->assertEquals(0, $b);
+        $this->assertEquals(1, $b);
     }
     // ...
 }
