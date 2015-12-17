@@ -23,9 +23,12 @@
 
     <target name="qa" description="Lance les outils d'analyse">
     	<phingcall target="phpcs" />
+    	<phingcall target="phpunit" />
 	 </target>
 
-
+	 <target name="phpunit">
+	    <exec logoutput="true" dir="${project.basedir}/${source}/tests" command="phpunit" escape="false" />
+	</target>
 	<target name="phpcs">
 	    <phpcodesniffer standard="Zend">
 	        <fileset dir="${project.basedir}/${source}">

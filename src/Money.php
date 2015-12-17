@@ -1,21 +1,21 @@
 <?php
 class Money
 {
-    private $amount;
+    private $_amount;
 
     public function __construct($amount)
     {
-        $this->amount = $amount;
+        $this->_amount = $amount;
     }
 
     public function getAmount()
     {
-        return $this->amount;
+        return $this->_amount;
     }
 
     public function negate()
     {
-        return new Money(-1 * $this->amount);
+        return new Money(-1 * $this->_amount);
     }
 
     // ...
