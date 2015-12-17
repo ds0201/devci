@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="TestJenkins" default="ci" basedir=".">
     <property name="source" value="src" />
-
+    <target name="deploy" description="tâche de déploiement" depends="ci">
+    	<exec logoutput="true"  command="echo 'ok' > /var/www/html/index.html" escape="false" />
+    </target>	
     <target name="ci"
         description="Tâche principale d'intégration continue"
         depends="clean,qa"
