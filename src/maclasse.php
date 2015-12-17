@@ -1,1 +1,3 @@
-maclasse.php
+<?php
+
+// nothing yet

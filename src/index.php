@@ -5,4 +5,3 @@ $c = $a + $b;
 
 echo "Le résultat est ".$c;
 
-?>
