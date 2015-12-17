@@ -22,10 +22,10 @@ class MoneyTest extends PHPUnit_Framework_TestCase
         $a = new Money(1);
 
         // Act
-        $b = $a->setAmount(123);
+        $a->setAmount(123);
 
         // Assert
-        $this->assertEquals(123, $b->getAmount());
+        $this->assertEquals(123, $a->getAmount());
     }
     // ...
 }
