@@ -18,5 +18,10 @@ class Money
         return new Money(-1 * $this->_amount);
     }
 
+    public function setAmount($amount)
+    {
+        $this->_amount = $amount;
+    }
+
     // ...
 }
