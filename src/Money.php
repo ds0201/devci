@@ -3,7 +3,7 @@ class Money
 {
     private $_amount;
 
-    public function __construct($amount)
+    public function __construct($amount=0)
     {
         $this->_amount = $amount;
     }
@@ -22,6 +22,9 @@ class Money
     {
         $this->_amount = $amount;
     }
-
+    public function addition($a,$b)
+    {
+        return $a+$b;
+    }
     // ...
 }

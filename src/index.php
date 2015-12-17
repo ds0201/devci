@@ -1,7 +1,9 @@
 <?php
-$a = 123;
-$b = 9;
-$c = $a + $b;
+include "Money.php";
 
-echo "Le résultat est ".$c;
+$a = new Money(1);
+$b = 1;
+$c = 2;
+$r = $a->addition($b,$c);
+echo "Le résultat de $b + $c est ".$r;
 
