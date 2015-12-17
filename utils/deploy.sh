@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sudo echo 'ok' > /var/www/html/ok.html
+echo "le chemin est : $WORKSPACE " > /var/www/html/ok.html 
