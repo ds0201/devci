@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-cp -r src/* /var/www/html/
+sudo cp -r src/* /var/www/html/
