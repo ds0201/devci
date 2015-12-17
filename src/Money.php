@@ -26,5 +26,9 @@ class Money
     {
         return $a+$b;
     }
+    public function substraction($a,$b)
+    {
+        return $a-$b;
+    }
     // ...
 }
