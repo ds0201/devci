@@ -7,11 +7,11 @@
 
     <filter>
         <whitelist>
-            <directory suffix=".php">../src</directory>
+            <directory suffix=".php">../../src</directory>
         </whitelist>
     </filter>
 
     <logging>
-        <log type="junit" target="../build/logs/junit.xml" logIncompleteSkipped="false"/>
+        <log type="junit" target="/var/lib/jenkins/Builds/build/logs/junit.xml" logIncompleteSkipped="false"/>
     </logging>
 </phpunit>
