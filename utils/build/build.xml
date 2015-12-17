@@ -27,7 +27,8 @@
 	 </target>
 
 	 <target name="phpunit">
-	    <phpunit configuration="${project.basedir}/utils/build/phpunit.xml"  pharlocation="/usr/local/bin/phpunit"/>
+	    
+	    <exec logoutput="true" dir="${project.basedir}/${source}/tests" command="phpunit -c phpunit.xml" escape="false" />
 	</target>
 	<target name="phpcs">
 	    <phpcodesniffer standard="Zend">
