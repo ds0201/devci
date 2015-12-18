@@ -2,6 +2,7 @@
 class Money
 {
     private $_amount;
+    private $abcd;
 
     public function __construct($amount=0)
     {
