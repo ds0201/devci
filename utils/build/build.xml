@@ -26,7 +26,10 @@
     <target name="qa" description="Lance les outils d'analyse">
     	<phingcall target="phpcs" />
     	<phingcall target="phpunit" />
+    	<phingcall target="phpmd" />
 	 </target>
+
+
 
 	 <target name="phpunit">
 	    
