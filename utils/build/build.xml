@@ -44,9 +44,7 @@
 	    </phpcodesniffer>
 	</target>	 
    <target name="phpmd">
-	    <phpmd file="${project.basedir}/${source}">
-	        <formatter type="xml" outfile="${project.basedir}/build/phpmd.xml" />
-	    </phpmd>
+   		<exec command="usr/local/bin/phpmd ${project.basedir}/${source} xml --reportfile ${project.basedir}/build/phpmd.xml" />
 	</target>
 
 
